@@ -21,7 +21,7 @@
             <form>
                 <a class="login_link" href="../sign_page/index.html">Don't have an account?</a>
                 <h1 style="font-weight: bold;">Welcome Back!</h1>
-                <div  class="form-text" style="font-size: large;">please sign in to continue</div>
+                <div class="form-text" style="font-size: large;">please sign in to continue</div>
                 <br>
                 <div class="mb-3">
                     <input type="text" class="form-control" id="sign-username" placeholder="User Name" required>
@@ -35,12 +35,14 @@
             <div style="text-align: center; font-size: larger;">or</div>
             <br>
             <div class="google_facebook">
-                <a type="button" href="https://www.google.com/" class="btn btn-outline-secondary" style="font-weight: bolder;">
+                <a type="button" href="https://www.google.com/" class="btn btn-outline-secondary"
+                    style="font-weight: bolder;">
                     <img width="35" height="35" src="https://img.icons8.com/color/48/google-logo.png"
                         alt="google-logo" />
                     continue with Google
                 </a>
-                <a type="button" href="https://www.facebook.com" class="btn btn-outline-secondary" style="font-weight: bolder;">
+                <a type="button" href="https://www.facebook.com" class="btn btn-outline-secondary"
+                    style="font-weight: bolder;">
                     <img width="35" height="35" src="https://img.icons8.com/color/48/facebook.png" alt="facebook" />
                     continue with Facebook
                 </a>
@@ -71,11 +73,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         let swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
             },
-        });
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+            });
     </script>
     <script src="index.js"></script>
 </body>

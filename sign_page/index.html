@@ -51,13 +51,15 @@
             <br>
             <div style="text-align: center; font-size: larger;">or</div>
             <br>
-            <div class="google_facebook" >
-                <a type="button" href="https://www.google.com" class="btn btn-outline-secondary" style="font-weight: bolder;">
+            <div class="google_facebook">
+                <a type="button" href="https://www.google.com" class="btn btn-outline-secondary"
+                    style="font-weight: bolder;">
                     <img width="35" height="35" src="https://img.icons8.com/color/48/google-logo.png"
                         alt="google-logo" />
                     sign up with Google
                 </a>
-                <a type="button" href="https://www.facebook.com" class="btn btn-outline-secondary" style="font-weight: bolder;">
+                <a type="button" href="https://www.facebook.com" class="btn btn-outline-secondary"
+                    style="font-weight: bolder;">
                     <img width="35" height="35" src="https://img.icons8.com/color/48/facebook.png" alt="facebook" />
                     sign up with Facebook
                 </a>
@@ -69,6 +71,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         let swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 dynamicBullets: true,
