@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+}
+
+.sideMenu {
+    padding: 1.5rem;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 2px solid rgba(0, 0, 0, 0.243);
+
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.list:hover{
+    cursor:hand;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.trim{
+    color: rgba(0, 0, 0, 0.427);
+}
