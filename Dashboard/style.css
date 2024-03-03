@@ -11,6 +11,7 @@
     height: 100vh;
     background-color: #ffffff;
     border-right: 2px solid rgba(0, 0, 0, 0.243);
+    position: relative;
 
 }
 
@@ -20,13 +21,15 @@
     align-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 1rem;
+    gap: 0.5rem;
     text-decoration: none;
     color: black;
     cursor: pointer;
+    max-width: 10rem;
 }
-.list:hover{
-    cursor:hand;
+
+.list:hover {
+    cursor: hand;
 }
 
 .parent {
@@ -37,6 +40,80 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-.trim{
+
+.trim {
     color: rgba(0, 0, 0, 0.427);
+}
+
+.chart {
+    width: 17rem;
+}
+
+.pie_chart {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+    border-radius: 3rem;
+
+}
+
+.container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.total_orders {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    padding: 2rem 3rem;
+    border-radius: 3rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fave {
+    position: absolute;
+    top: 25px;
+    left: 39px
+}
+
+.profile {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 1rem;
+    border-radius: 20px;
+}
+
+.food {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.ccc {
+    width: 25%;
+    display: flex;
+    text-align: center;
+
+
 }

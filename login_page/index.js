@@ -13,19 +13,26 @@ let data = [
     }
 ]
 
-let login_username = document.querySelector("#login-username");
+let login_username = document.querySelector('#login-username');
 let login_userpassword = document.querySelector("#login-password");
 let form = document.querySelector(".wrong");
 
 function submit() {
+    if(form.style.display == "none"){
+        form.style.display = "flex";
+    }
     if (data.some(ele => ele.username == login_username.value && ele.password == login_userpassword.value)) {
         window.location.href = "../Dashboard/index.html";
     } else {
-        form.innerHTML += `
-    <div  class="alert alert-danger animate__animated animate__fadeIn" role="alert">
+        form.innerHTML  = `
+    <div  class="alertt alert alert-danger animate__animated animate__fadeIn" role="alert">
     wrong username or password
     </div>
     `
+        setTimeout(() => {
+            form.style.display = "none";
+        }, 2000)
+
     }
 
 }
